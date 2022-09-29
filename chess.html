@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="chess.css">
+</head>
+<body>
+
+<div id="endscene">
+	<p class="winning-sign">white wins</p>
+	<div class="overlay"></div>
+</div>
+
+<p id="turn">White's Turn</p>
+
+
+<div id="board">
+	<div class="odd">
+		<div class="box" id="81"><img class="piece" id="blackRook1" src="chessPiecePNG/BRook.png"></div>
+		<div class="box" id="82"><img class="piece" id="blackKnight1" src="chessPiecePNG/BKnight.png"></div>
+		<div class="box" id="83"><img class="piece" id="blackBishop1" src="chessPiecePNG/BBishop.png"></div>
+		<div class="box" id="84"><img class="piece" id="blackQueen" src="chessPiecePNG/BQueen.png"></div>
+		<div class="box" id="85"><img class="piece" id="blackKing" src="chessPiecePNG/BKing.png"></div>
+		<div class="box" id="86"><img class="piece" id="blackBishop2" src="chessPiecePNG/BBishop.png"></div>
+		<div class="box" id="87"><img class="piece" id="blackKnight2" src="chessPiecePNG/BKnight.png"></div>
+		<div class="box" id="88"><img class="piece" id="blackRook2" src="chessPiecePNG/BRook.png"></div>
+	</div>
+	<div class="even">
+		<div class="box" id="71"><img class="piece" id="blackPawn1" src="chessPiecePNG/BPawn.png"></div>
+		<div class="box" id="72"><img class="piece" id="blackPawn2" src="chessPiecePNG/BPawn.png"></div>
+		<div class="box" id="73"><img class="piece" id="blackPawn3" src="chessPiecePNG/BPawn.png"></div>
+		<div class="box" id="74"><img class="piece" id="blackPawn4" src="chessPiecePNG/BPawn.png"></div>
+		<div class="box" id="75"><img class="piece" id="blackPawn5" src="chessPiecePNG/BPawn.png"></div>
+		<div class="box" id="76"><img class="piece" id="blackPawn6" src="chessPiecePNG/BPawn.png"></div>
+		<div class="box" id="77"><img class="piece" id="blackPawn7" src="chessPiecePNG/BPawn.png"></div>
+		<div class="box" id="78"><img class="piece" id="blackPawn8" src="chessPiecePNG/BPawn.png"></div>
+	</div>
+	<div class="odd">
+		<div class="box" id="61"></div>
+		<div class="box" id="62"></div>
+		<div class="box" id="63"></div>
+		<div class="box" id="64"></div>
+		<div class="box" id="65"></div>
+		<div class="box" id="66"></div>
+		<div class="box" id="67"></div>
+		<div class="box" id="68"></div>
+	</div>
+	<div class="even">
+		<div class="box" id="51"></div>
+		<div class="box" id="52"></div>
+		<div class="box" id="53"></div>
+		<div class="box" id="54"></div>
+		<div class="box" id="55"></div>
+		<div class="box" id="56"></div>
+		<div class="box" id="57"></div>
+		<div class="box" id="58"></div>
+	</div>
+	<div class="odd">
+		<div class="box" id="41"></div>
+		<div class="box" id="42"></div>
+		<div class="box" id="43"></div>
+		<div class="box" id="44"></div>
+		<div class="box" id="45"></div>
+		<div class="box" id="46"></div>
+		<div class="box" id="47"></div>
+		<div class="box" id="48"></div>
+	</div>
+	<div class="even">
+		<div class="box" id="31"></div>
+		<div class="box" id="32"></div>
+		<div class="box" id="33"></div>
+		<div class="box" id="34"></div>
+		<div class="box" id="35"></div>
+		<div class="box" id="36"></div>
+		<div class="box" id="37"></div>
+		<div class="box" id="38"></div>
+	</div>
+	<div class="odd">
+		<div class="box" id="21"><img class="piece" id="whitePawn1" src="chessPiecePNG/WPawn.png"></div>
+        <div class="box" id="22"><img class="piece" id="whitePawn2" src="chessPiecePNG/WPawn.png"></div>
+		<div class="box" id="23"><img class="piece" id="whitePawn3" src="chessPiecePNG/WPawn.png"></div>
+		<div class="box" id="24"><img class="piece" id="whitePawn4" src="chessPiecePNG/WPawn.png"></div>
+		<div class="box" id="25"><img class="piece" id="whitePawn5" src="chessPiecePNG/WPawn.png"></div>
+		<div class="box" id="26"><img class="piece" id="whitePawn6" src="chessPiecePNG/WPawn.png"></div>
+		<div class="box" id="27"><img class="piece" id="whitePawn7" src="chessPiecePNG/WPawn.png"></div>
+		<div class="box" id="28"><img class="piece" id="whitePawn8" src="chessPiecePNG/WPawn.png"></div>
+	</div>
+	<div class="even">
+		<div class="box" id="11"><img class="piece" id="whiteRook1" src="chessPiecePNG/WRook.png"></div>
+		<div class="box" id="12"><img class="piece" id="whiteKnight1" src="chessPiecePNG/WKnight.png"></div>
+		<div class="box" id="13"><img class="piece" id="whiteBishop1" src="chessPiecePNG/WBishop.png"></div>
+		<div class="box" id="14"><img class="piece" id="whiteQueen" src="chessPiecePNG/WQueen.png"></div>
+		<div class="box" id="15"><img class="piece" id="whiteKing"  src="chessPiecePNG/WKing.png"></div>
+		<div class="box" id="16"><img class="piece" id="whiteBishop2" src="chessPiecePNG/WBishop.png"></div>
+		<div class="box" id="17"><img class="piece" id="whiteKnight2" src="chessPiecePNG/WKnight.png"></div>
+		<div class="box" id="18"><img class="piece" id="whiteRook2" src="chessPiecePNG/WRook.png"></div>
+	</div>
+</div>
+
+<script type="text/javascript" src="piece/Piece.js"></script>
+<script type="text/javascript" src="piece/King.js"></script>
+<script type="text/javascript" src="piece/Queen.js"></script>
+<script type="text/javascript" src="piece/Rook.js"></script>
+<script type="text/javascript" src="piece/Bishop.js"></script>
+<script type="text/javascript" src="piece/Knight.js"></script>
+<script type="text/javascript" src="piece/Pawn.js"></script>
+<script type="text/javascript" src="chess.js"></script>
+
+</body>
+</html>
